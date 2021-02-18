@@ -90,7 +90,7 @@ module.exports = {
       deleteMethod : async function (req, res, next) {
         try {
           const tunjanganPegawaiId  = req.params.id;
-          const tunjanganPegawai = await model.tunjanganPegawai.destroy({ where: {
+          const tunjanganPegawai = await model.tunjangan_pegawai.destroy({ where: {
             id_tunjangan_pegawai  : tunjanganPegawaiId
           }})
           if (tunjanganPegawaiId) {

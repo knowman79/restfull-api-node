@@ -95,7 +95,7 @@ module.exports = {
         try {
           const presentasiGajiId  = req.params.id;
           const presentase_gaji= await model.presentase_gaji.destroy({ where: {
-            id_presentasi_gaji : presentasiGajiId
+            id_presentase_gaji : presentasiGajiId
           }})
           if (presentasiGajiId) {
             res.json ({
